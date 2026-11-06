@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vivek Banerjee | BCA (AI/ML) Student & Aspiring Cloud Engineer</title>
+<meta name="description" content="Personal portfolio of Vivek Banerjee, BCA (AI/ML) student at REVA University, Bangalore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">Portfolio<span>.</span></a>
+  <nav>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-tools">
+    <button id="themeBtn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    <button id="burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- 1. HOME -->
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="hello">Hello, welcome to my corner of the internet.</p>
+      <h1>Vivek<br>Banerjee</h1>
+      <p class="role">I'm a <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="intro">BCA (AI/ML) student at REVA University, Bangalore. I'm the Technical Coordinator of the IOT Club, I enjoy building with code, and I'm aiming for a career in cloud engineering.</p>
+      <div class="btns">
+        <a href="#contact" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
+        <a href="#skills" class="btn ghost">See my skills</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-ring"></div>
+      <div class="photo-frame">
+        <img src="img1.png" alt="Vivek Banerjee" class="photo" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo fallback',textContent:'VB'}))">
+      </div>
+      <div class="badge b1"><i class="fa-solid fa-microchip"></i> IOT Club</div>
+      <div class="badge b2"><i class="fa-solid fa-cloud"></i> Cloud-bound</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">About me</h2>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I'm Vivek, from Bilaspur, Chhattisgarh. I studied commerce at Loyola School, scoring 83% in 10th and 93% in 12th, and then moved to Bangalore to pursue a BCA in AI/ML at REVA University.</p>
+        <p>I'm curious, calm under pressure and a natural coordinator. Running hackathons and club events taught me how to lead a team and ship things on time. Outside of tech, you'll find me reading or on the badminton court.</p>
+        <p>My goal is simple: get a solid technical role, learn from real projects, and grow into a cloud engineer.</p>
+      </div>
+      <ul class="facts reveal">
+        <li><i class="fa-solid fa-location-dot"></i><div><b>Hometown</b>Bilaspur, Chhattisgarh, India</div></li>
+        <li><i class="fa-solid fa-graduation-cap"></i><div><b>Studying</b>BCA (AI/ML), REVA University</div></li>
+        <li><i class="fa-solid fa-users"></i><div><b>Role</b>Technical Coordinator, IOT Club</div></li>
+        <li><i class="fa-solid fa-heart"></i><div><b>Interests</b>Music, reading, badminton</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. EDUCATION -->
+<section id="education" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">Education</h2>
+    <div class="timeline">
+      <article class="tl reveal">
+        <span class="dot"></span>
+        <div class="tl-card">
+          <h3>BCA (AI/ML)</h3>
+          <p class="where">REVA University, Bangalore</p>
+          <p>Currently pursuing. Technical Coordinator of the IOT Club.</p>
+          <span class="tag">Present</span>
+        </div>
+      </article>
+      <article class="tl reveal">
+        <span class="dot"></span>
+        <div class="tl-card">
+          <h3>12th Standard, Commerce</h3>
+          <p class="where">Loyola School, Bilaspur</p>
+          <div class="score"><div class="ring" data-val="93"><span>0%</span></div><p>Scored 93%</p></div>
+        </div>
+      </article>
+      <article class="tl reveal">
+        <span class="dot"></span>
+        <div class="tl-card">
+          <h3>10th Standard</h3>
+          <p class="where">Loyola School, Bilaspur</p>
+          <div class="score"><div class="ring" data-val="83"><span>0%</span></div><p>Scored 83%</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SKILLS -->
+<section id="skills" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">My skills</h2>
+    <div class="tabs reveal" id="tabs">
+      <button class="on" data-f="all">All</button>
+      <button data-f="basic">Computer basics</button>
+      <button data-f="code">Programming</button>
+      <button data-f="tech">Technical</button>
+      <button data-f="other">Other</button>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card reveal" data-c="basic">
+        <h3><i class="fa-solid fa-desktop"></i> Computer basics</h3>
+        <div class="chips"><span>Operating system fundamentals</span><span>Microsoft Excel</span><span>Basic troubleshooting</span></div>
+      </div>
+      <div class="skill-card reveal" data-c="code">
+        <h3><i class="fa-solid fa-code"></i> Programming languages</h3>
+        <div class="chips"><span>C</span><span>C++</span><span>Python</span></div>
+      </div>
+      <div class="skill-card reveal" data-c="tech">
+        <h3><i class="fa-solid fa-gears"></i> Technical skills</h3>
+        <div class="chips"><span>SQL</span><span>Linux</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+      <div class="skill-card reveal" data-c="other">
+        <h3><i class="fa-solid fa-people-group"></i> Other abilities</h3>
+        <div class="chips"><span>Hackathon coordination</span><span>Event coordination</span><span>Team leadership</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. HOBBIES -->
+<section id="hobbies" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">Hobbies &amp; interests</h2>
+    <div class="hobby-grid">
+      <div class="hobby reveal"><i class="fa-solid fa-music"></i><h3>Music</h3><p>Music keeps me focused and recharged, whether I'm coding or relaxing.</p></div>
+      <div class="hobby reveal"><i class="fa-solid fa-book-open"></i><h3>Reading</h3><p>Books help me learn new ideas and see problems from different angles.</p></div>
+      <div class="hobby reveal"><i class="fa-solid fa-table-tennis-paddle-ball"></i><h3>Badminton</h3><p>My favourite sport. It keeps me fit and has taught me teamwork and quick thinking.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. GOALS -->
+<section id="goals" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">My goals</h2>
+    <div class="goal-grid">
+      <div class="goal reveal"><i class="fa-solid fa-flag"></i><h3>Short term</h3><p>Join a service-based company in a technical role, build strong fundamentals and learn how real projects are delivered.</p></div>
+      <div class="goal reveal"><i class="fa-solid fa-cloud"></i><h3>Long term</h3><p>Grow into a cloud engineer, designing and managing reliable, scalable systems.</p></div>
+      <div class="goal reveal"><i class="fa-solid fa-lightbulb"></i><h3>In technology</h3><p>Use AI/ML, IoT and cloud together to build practical solutions, and keep learning along the way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ACHIEVEMENTS -->
+<section id="achievements" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">My achievements</h2>
+    <div class="ach-grid">
+      <div class="ach reveal"><i class="fa-solid fa-microchip"></i><h3>Technical Coordinator</h3><p>Leading technical activities at the IOT Club, REVA University.</p></div>
+      <div class="ach reveal"><i class="fa-solid fa-medal"></i><h3>93% in 12th</h3><p>Commerce, Loyola School, Bilaspur.</p></div>
+      <div class="ach reveal"><i class="fa-solid fa-trophy"></i><h3>Hackathon 3.0</h3><p>Recognized for contributing to “Solve for Society” at REVA University.</p></div>
+    </div>
+    <div class="achievement-gallery">
+      <figure class="achievement-photo reveal"><img src="img2.jpg" alt="Vivek receiving recognition at Hackathon 3.0"><figcaption><h3>Hackathon 3.0 recognition</h3><p>Certificate presentation at REVA University.</p></figcaption></figure>
+      <figure class="achievement-photo reveal"><img src="img3.jpg" alt="Hackathon 3.0 participants at REVA University"><figcaption><h3>Hackathon team</h3><p>With fellow participants at the event.</p></figcaption></figure>
+      <figure class="achievement-photo reveal"><img src="img5.jpg" alt="Vivek at a REVA University recognition event"><figcaption><h3>University recognition</h3><p>Celebrating student achievements at REVA University.</p></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CERTIFICATIONS -->
+<section id="certifications" class="sec alt">
+  <div class="wrap">
+    <h2 class="reveal">Certifications</h2>
+    <div class="cert-grid">
+      <article class="cert-card reveal">
+        <a href="img4.jpg" target="_blank" rel="noopener noreferrer"><img src="img4.jpg" alt="REVA University Certificate of Excellence for Hackathon 3.0"></a>
+        <div class="cert-copy"><h3>Certificate of Excellence</h3><p>Hackathon 3.0 – Solve for Society 2026 · School of Computer Science and Applications, REVA University · October 9, 2026</p><a href="img4.jpg" target="_blank" rel="noopener noreferrer">View certificate image</a></div>
+      </article>
+      <article class="cert-card reveal">
+        <a href="coursera-c-certificate.png" target="_blank" rel="noopener noreferrer"><img src="coursera-c-certificate.png" alt="Coursera C for Everyone, Part 1: Programming Fundamentals certificate"></a>
+        <div class="cert-copy"><h3>C for Everyone, Part 1</h3><p>Programming Fundamentals · University of California, Santa Cruz via Coursera · Completed November 5, 2026</p><p><a href="Coursera%20EFMKI68SX553.pdf" target="_blank" rel="noopener noreferrer">View certificate PDF</a> · <a href="https://coursera.org/verify/EFMKI68SX553" target="_blank" rel="noopener noreferrer">Verify online</a></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CONTACT -->
+<section id="contact" class="sec contact">
+  <div class="wrap">
+    <h2 class="reveal">Contact me</h2>
+    <p class="reveal lead">Looking for an intern or a fresher? Let's talk.</p>
+    <div class="contact-box reveal">
+      <a class="mail" href="mailto:gg3104634@gmail.com"><i class="fa-solid fa-envelope"></i> gg3104634@gmail.com</a>
+      <button class="btn ghost-light" id="copyBtn"><i class="fa-regular fa-copy"></i> Copy email</button>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/vivek-banerjee-7ab557417" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/vivekbanerjee5" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="yr"></span> Vivek Banerjee. Built with HTML, CSS and JavaScript.</p>
+  <a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+<div class="toast" id="toast">Email copied</div>
+<script src="script.js"></script>
+</body>
+</html>
